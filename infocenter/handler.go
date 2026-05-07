@@ -55,6 +55,8 @@ func (h *Handler) HandleSubscribe(w http.ResponseWriter, r *http.Request, topicN
 		return
 	}
 
+	flusher.Flush()
+
 	sub := h.manager.Subscribe(topicName)
 	defer h.manager.Unsubscribe(topicName, sub)
 
