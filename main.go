@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/nikivavlt/aardvark-challenge/infocenter"
+	"github.com/nikivavlt/infocenter/infocenter"
 )
 
 func main() {
